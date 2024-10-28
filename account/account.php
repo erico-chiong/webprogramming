@@ -27,7 +27,7 @@
                                 </div>
                             </form>
                             <div class="d-flex align-items-center">
-                                <label for="category-filter" class="me-2">Category</label>
+                                <label for="category-filter" class="me-2">Role</label>
                                 <select id="category-filter" class="form-select">
                                     <option value="choose">Choose...</option>
                                     <option value="">All</option>
@@ -56,6 +56,7 @@
                                     <th>Last Name</th>
                                     <th class="text-start">Username</th>
                                     <th class="text-center">Role</th>
+                                    <th class="text-center">Action</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -71,7 +72,7 @@
                                         <td><?= $arr['last_name'] ?></td>
                                         <td><?= $arr['username'] ?></td>
                                         <td class="text-center"><?= $arr['role'] ?></td>
-                                        
+                                        <td class="text-center"><a class="btn btn-sm btn-outline-success me-1">Edit</a></td>
                                     </tr>
                                 <?php
                                     $i++;
